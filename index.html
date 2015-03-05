@@ -12,11 +12,46 @@
 		<script type="text/template" id="modal-window-template">
 			<div class="modal-window-container">
 				<div class="screen"></div>
-				<form>
-					<input type="text"></input>
-					<input type="password"></input>
-					<input type="submit"></input>
-				</form>
+				<div class="modal-window">
+					<table>
+						<thead>
+							<tr>
+								<th>Sign in</th>
+								<th class="close-button-container"><div class="close-button">X</div></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<form name="loginForm" class="login-form">
+										<input type="text" name="login" placeholder="put your login here"><br>
+										<input type="password" name="password"><br>
+										<input type="submit" name="submit" value="Login">
+										<label>Show password<input type="checkbox" name="showPassword"></label><br>
+										<label>Remeber me<input type="checkbox" name="remeberMe" checked></label>
+									</form>
+								</td>
+								<td>
+									You can also login with your social account<br>
+									<a href="#" class="button-facebook">Facebook</a>
+									<a href="#" class="button-twitter">Twitter</a>
+									<a href="#" class="button-google">Google</a>
+									<form name="openIDForm" class="openid-form">
+									Or use your OpenID to login<br>
+										<input type="text" name="openIDLogin" placeholder="Your openID">
+										<input type="submit" name="openIDSubmit" value="Go">
+									</form>
+									<p class="reminder">You may need to disable <br>any popup blockers to login with above sites</p>
+								</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan="2">Not registered? <a href="#">Register now!</a></td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
 			</div>
 		</script>
 		<script>

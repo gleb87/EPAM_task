@@ -5,7 +5,7 @@ function ModalWindow (options) {
 	var elem;
 
 	self.getElement = function() {
-		if (!elem) render();
+		if (!elem) render("");
 
 		return elem;
 	}

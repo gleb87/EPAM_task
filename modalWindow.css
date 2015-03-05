@@ -1,0 +1,17 @@
+.modal-window th {
+	text-align: left;
+}
+
+.modal-window .close-button-container {
+	text-align: right;
+}
+
+.modal-window .close-button {
+	display: inline-block;
+	cursor: pointer;
+	color: blue;
+}
+
+.modal-window tfoot {
+	text-align: center;
+}
